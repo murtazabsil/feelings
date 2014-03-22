@@ -1,0 +1,173 @@
+.displaynone {
+	display: none;
+}
+
+#home-gallery .gallery-img {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+#home-gallery .gallery-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.loading-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+.loader
+{
+    display: none;
+    width:200px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    margin-left: -50px;
+    margin-top: -100px;
+    z-index:2;
+    overflow: auto;
+}
+
+section#first .div-spacing{
+margin-top:3%;
+}
+
+#home-gallery .owl-controlls {
+	display: none;
+}
+
+#home-gallery-partioner {
+height : 50px;
+background: black;
+}
+
+#home-our-services-partioner {
+height : 50px;
+background: black;
+}
+
+#home-bottom-partioner {
+height : 50px;
+background: black;
+}
+
+#home-bottom-data .border {
+border: 1px solid grey; 
+border-radius : 5px; 
+width: 355px;
+}
+
+#home-bottom-data textarea {
+width:95%
+}
+
+.home-page section#first{
+padding:0px;
+}
+
+.non-home-page section#first{
+padding-top:31px;
+padding-bottom:0px;
+}
+
+footer .container .row .span4 .facebook{
+background:url("../images/fb_tw_ln.jpg")
+}
+footer .container .row .span4 .span2{
+width:25%;
+}
+
+#home-bottom-data .panel-primary{
+margin-bottom: 0px;
+}
+
+@media (min-width : 800px ){
+#home-gallery .span4{
+margin-left:35%;
+margin-right:20%;
+}
+#event-search  .search-title{
+margin-left:15px;
+}
+
+#event-search .span4{
+margin-left:0px;
+margin-top: 15px;
+}
+
+#event-search .span1{
+margin-left:0px;
+margin-top: 15px;
+}
+
+#event-search .span3{
+margin-left:0px;
+margin-top: 15px;
+}
+
+#event-search .span2{
+margin-left:0px;
+}
+
+#event-search .container .row .span4 select{
+width:120px;
+}
+
+#event-search .container .row .span4 input{
+width:105px;
+}
+
+#event-search .container .row .span2 input{
+width:105px;
+margin-top:15px;
+}
+
+#event-search .container .row .span3 select{
+width:120px;
+}
+
+#event-search .container .row .span2 button{
+width:45px;
+margin-top:5px;
+}
+#our-gallery-carousel-wrapper{
+margin-left: 185px;
+margin-top: 3%;
+padding-bottom: 3%;
+}
+}
+
+@media ( max-width : 540px){
+#home-bottom-data input {
+width:90%
+}
+#our-gallery-carousel-wrapper >ul{
+margin-left:0px;
+}
+#home-bottom-data .container {
+margin-left:0px;
+margin-right:0px;
+}
+#event-search .container .row select{
+width:95%;
+}
+#event-search .container .row input{
+width:90%;
+}
+#event-search .container .row button{
+margin-left: 35%;
+width: 25%;
+}
+#event-search{
+margin-bottom: 5%;
+}
+#event-search .container .row h3{
+margin-left: 25%;
+}
+}
