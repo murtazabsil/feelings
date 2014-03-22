@@ -1,6 +1,6 @@
 /*
-SQLyog Community v9.02 
-MySQL - 5.5.12-log : Database - feelings
+SQLyog Trial v11.4 (64 bit)
+MySQL - 5.6.12-log : Database - feelings
 *********************************************************************
 */
 
@@ -20,11 +20,27 @@ CREATE TABLE `budget` (
   `budget_id` bigint(30) NOT NULL AUTO_INCREMENT,
   `budget_amt` varchar(30) NOT NULL,
   PRIMARY KEY (`budget_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 /*Data for the table `budget` */
 
 insert  into `budget`(`budget_id`,`budget_amt`) values (0,'Budget'),(1,'100');
+
+/*Table structure for table `cards` */
+
+DROP TABLE IF EXISTS `cards`;
+
+CREATE TABLE `cards` (
+  `card_id` bigint(30) NOT NULL AUTO_INCREMENT,
+  `card_name` varchar(100) NOT NULL,
+  `card_title` text,
+  `location` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`card_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+/*Data for the table `cards` */
+
+insert  into `cards`(`card_id`,`card_name`,`card_title`,`location`) values (1,'WEDDING ANNIVERSARIES','CELEBRATION OF ONE OF THE MOST BEAUTIFUL DAY IN A COUPLES LIFE THERE WEDDING DAY<br>\r\nA wedding anniversary is a very important celebration in the life of every couple, <br>\r\nit is a day to commemorate on the most important days in their lives- the wedding day.<br> \r\nThe purpose of a wedding anniversary is to honor the memories of the wedding day. <br>\r\nIt show cases the love and affection which the couples have towards each other regardless of the no of years to their marriage.<br>\r\nWe offer theme base event for you and your family on your Anniversary day.','happy-anniversary-heart-glitter.gif'),(2,'BACHELORS/HENS PARTIES','THE DAY FOR YOU TO GET WILD WITH YOU CLOSE FRIENDS BEFORE YOUR BIG DAY<br>\r\nThe Bachelor/Hens party planning traditionally falls to the Best man/Bridesmaid, <br>\r\nbut it can also be handled by best friends too.<br>\r\nWe at FEELINGS can create one of its kind atmosphere for you and your friends and family members to get along <br>\r\nand be a little wild before you Big Day, with the wildest arrangements.','BACHELORS-HENS PARTIES.jpg'),(3,'BIRTHDAY PARTIES','CELEBRATION OF LIFE AND THANKING EVERY ONE FOR BEEING IN OUR LIVES<br>\r\nBirthday reminds every one about the Genesis, with an empty brain, empty heart, <br>\r\nnot knowing what is right or wrong and not knowing what is happiness or sorrow, what is strength or weakness. <br>\r\nAfter coming to this world we are accommodated by many people we call them family & friends. As we grow elder we are accommodated by more people which becomes a recurring process till death.<br>\r\nEvery year we look forward for this moment to call up on all the people under one roof to thank them for being part of our life, <br>\r\nand spend quality time with them treating them with the best food, dance, drinks, gifts, games etc.<br>\r\nAt FEELINGS we have special Birthday themes for all age group, supported with theme decorations and caterings.','Birthday Cake.jpg'),(4,'DECORATIONS','EVERY OCCASION WILL BE INCOMPLETE WITHOUT THE PERFECT DECORATIONS FOR THE DAY<br>\r\nA Perfect decorations enhances the look and feel of the venue, it brings happiness as it is viewed by the eyes and hits the heart and mind. <br>\r\nSo it really important to have the perfect decorations for the occasion.<br>\r\nAt FEELINGS we do all sorts of decorations to enhance the beauty of your venue, house, vehicles etc.','balloon_wedding_decorations_2.jpg'),(5,'ENGAGEMENTS','THE FIRST STEP INTO A HOLLY MARTAMONY CALLED ENGAGEMENT<br>\r\nIf you have finally met the most special person of your life, the person you respect, adore and with whom you wish to spend the rest of your life. <br>\r\nWe would be more than happy to assist you and your family in creating a spectacular and theme based engagement function for you and your close family members.','Engagement.jpg'),(6,'HOUSE PARTIES','WHEN PARTY IS ON YOUR MIND<br>\r\nOvercrowded pubs, expensive drinks, out of budget dinner packages, safety, and police patrolling on the roads…<br>\r\nthere are enough reasons for people to think of an intimate House Party with close friend instead of a fancy club.<br>\r\nWe at FEELINGS can organize theme based parties for you at your premises, ensuring you don’t miss any elements compared to a fancy club, <br>\r\nwith the best sound & lightings for house parties, exclusive catering, Bartenders, Decorations, etc.','house party image.jpg'),(7,'MAKEUP ARTIST/ STYLIST','A “MUA” IS A PROFESSIONAL ARTIST WHO WOULD SKILLFULLY TRANSFORM THE HUMAN CANVAS INTO THE DESIRED CHARACTER OR APPEARANCE WITHIN AN ALLOTED TIME.<br>\r\nAt FEELINGS we have a team of professional & Skillful “MUA” armed with the latest equipment with the latest technologies would work with you to enhance <br>\r\nyour physical features and create a flawless appearance in you, regardless of the occasion.<br>\r\nWe are equipped to cater to a large audience with all sorts of MUA & Stylist jobs.','Bridal-Make-Up-Artist-gives.jpg'),(8,'SOUND/LIGHTINGS','IT IS WHAT WE EXPERIENCE THROUGH OUR SENSES THAT MAKES LIFE MEANINGFUL. <br>\r\nIN FACT, IT CAN BE SAID THAT WHAT IS EXPERIENCED THROUGH THE SENSES IS LIFE ITSELF.<br>\r\nThe two higher senses, seeing and hearing, are the basic fundamentals of life, they are the basis for all higher human endeavor. <br>\r\nImpressions obtained through these two senses are a much a necessary human nourishments as food & water.<br>\r\nOne every occasion people looks forward to letting their hair down and getting up and dancing to their favorite tracks. <br>\r\nThere’s nothing like getting the whole friends and family together on a special occasion.<br>\r\nThat’s why it’s important to get it right with having a reliable, clear sounding system and lighting that makes people feel like dancing, it adds to the mood and creates a party atmosphere.<br>\r\nAt FEELINGS, our team of Sound & Lighting experts will help you identify and fulfill your requirements for you special occasions.','Sounds and Lightings.jpg'),(9,'WEDDING DRESSES/GOWNS','A WOMAN’S/ MEN’S MOST IMPORTANT PIECE OF CLOTHING WHICH SYMBOLIZE OF THE SPECIAL DAY.<br>\r\nWe at FEELINGS have partnered with creators of exclusive Wedding Dresses & Gowns, regardless of you want to purchase one or you want to rent one, <br>\r\nwe will be able to service you a per your requirements.','Wedding Gowns-2.jpg'),(10,'FEELINGS - WEDDING PLANNERS','OUR METHODOLOGY (C+C+C+C = C 4 YOURSELF)<br>\r\n“MARRIAGES ARE DECIDED IN HEAVEN” and “CELEBRATED ON EARTH”<br>\r\nIf you are ready to celebrate your wedding anywhere on Earth,<br>\r\nwe would be more than happy to assist you and your family in creating a Heavenly wedding on Earth which would be remembered by you and your guests for a life time. <br>\r\nFEELINGS Wedding Planners comes as your personal advisor, <br>FEELINGS Wedding Planner would invest time with you & your family in understanding your needs and further Conceptualizing, Creating, <br>\r\nCoordinating and Completing a spectacular show down which would reflect and showcase your Taste and Style on your Wedding day, <br>with the most delicious and mouth-watering cuisines to the most spectacular theme decorations and management of the entire event from start till the end in a timely manner.','Marriage-Anniversary-HD-Wallpaper-9-600x375.jpg');
 
 /*Table structure for table `city` */
 
@@ -39,8 +55,9 @@ CREATE TABLE `city` (
   `latitude` double DEFAULT NULL,
   `longitude` double DEFAULT NULL,
   PRIMARY KEY (`city_id`),
-  KEY `fk_city_country1` (`country_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1306 DEFAULT CHARSET=utf8;
+  KEY `fk_city_country1` (`country_id`),
+  CONSTRAINT `fk_city_country1` FOREIGN KEY (`country_id`) REFERENCES `country` (`country_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=1306 DEFAULT CHARSET=utf8;
 
 /*Data for the table `city` */
 
@@ -56,7 +73,7 @@ CREATE TABLE `country` (
   `country_code` varchar(5) DEFAULT NULL,
   `country_info` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`country_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=103 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=103 DEFAULT CHARSET=utf8;
 
 /*Data for the table `country` */
 
@@ -80,12 +97,17 @@ CREATE TABLE `event_search` (
   KEY `FK_country` (`country_id`),
   KEY `FK_city` (`city_id`),
   KEY `FK_person` (`persons`),
-  KEY `FK_budget` (`budget`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+  KEY `FK_budget` (`budget`),
+  CONSTRAINT `FK_budget` FOREIGN KEY (`budget`) REFERENCES `budget` (`budget_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_city` FOREIGN KEY (`city_id`) REFERENCES `city` (`city_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_country` FOREIGN KEY (`country_id`) REFERENCES `country` (`country_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_event_type` FOREIGN KEY (`event_type_id`) REFERENCES `event_type` (`event_type_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_person` FOREIGN KEY (`persons`) REFERENCES `persons` (`person_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 /*Data for the table `event_search` */
 
-insert  into `event_search`(`event_search_id`,`persons`,`budget`,`event_type_id`,`country_id`,`city_id`,`email_id`,`mobile_no`) values (9,0,0,0,1,0,'murtazabsil2012@gmail.com',0),(10,0,0,0,1,0,'test',0),(11,1,0,0,1,0,'Email Idtse',0);
+insert  into `event_search`(`event_search_id`,`persons`,`budget`,`event_type_id`,`country_id`,`city_id`,`email_id`,`mobile_no`) values (9,0,0,0,1,0,'murtazabsil2012@gmail.com',0);
 
 /*Table structure for table `event_type` */
 
@@ -95,11 +117,11 @@ CREATE TABLE `event_type` (
   `event_type_id` bigint(30) NOT NULL AUTO_INCREMENT,
   `event_type_name` varchar(100) NOT NULL,
   PRIMARY KEY (`event_type_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 /*Data for the table `event_type` */
 
-insert  into `event_type`(`event_type_id`,`event_type_name`) values (0,'Event Type'),(1,'Wedding');
+insert  into `event_type`(`event_type_id`,`event_type_name`) values (0,'Event Type'),(1,'PRE-WEDDING CELEBRATIONS'),(2,'ENGAGEMENT'),(3,'WEDDING'),(4,'ANNIVERSARIES'),(5,'DJ, SOUND & LIGHTINGS'),(6,'BIRTHDAYS CELEBRATIONS'),(7,'KITTY PARTIES'),(8,'BACHELOR / HENS PARTIES'),(9,'DECORATIONS'),(10,'HONEY MOON PACKAGES'),(11,'CORPORATE EVENTS'),(12,'BRAND PROMOTIONS'),(13,'FEELINGS SOCIAL THEME PARTIES / CELEBRATIONS'),(14,'FEELINGS SCHOOL, COLLEGES & UNIVERSITIES EVENTS'),(15,'FEELINGS WEDDING DRESSES/ GOWNS'),(16,'OTHERS');
 
 /*Table structure for table `images` */
 
@@ -111,11 +133,11 @@ CREATE TABLE `images` (
   `image_type` varchar(100) DEFAULT NULL,
   `image_desc` text,
   PRIMARY KEY (`image_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=66 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8;
 
 /*Data for the table `images` */
 
-insert  into `images`(`image_id`,`image_name`,`image_type`,`image_desc`) values (1,'anasayfayazlar_45_602_bg.jpg','gallery',NULL),(2,'church-wedding-decorations-pfesocut.jpg','gallery',NULL),(3,'Decor.jpg','gallery',NULL),(4,'Decoraton.jpg','gallery',NULL),(5,'DSC_0008.jpg','gallery',NULL),(6,'DSC_0011.jpg','gallery',NULL),(7,'DSC_0014.jpg','gallery',NULL),(8,'DSC_0028.jpg','gallery',NULL),(9,'DSC_0032.jpg','gallery',NULL),(10,'DSC_0034.jpg','gallery',NULL),(11,'DSC_0040.jpg','gallery',NULL),(12,'DSC_0045.jpg','gallery',NULL),(13,'DSC_0058.jpg','gallery',NULL),(14,'DSC_0062.jpg','gallery',NULL),(15,'DSC_0071.jpg','gallery',NULL),(16,'DSC_0072.jpg','gallery',NULL),(17,'DSC_0074.jpg','gallery',NULL),(18,'DSC_0182.jpg','gallery',NULL),(19,'DSC_0184.jpg','gallery',NULL),(20,'DSC_0701.jpg','gallery',NULL),(21,'DSC_6428.jpg','gallery',NULL),(22,'DSC_6429.jpg','gallery',NULL),(23,'DSC_6432.jpg','gallery',NULL),(24,'DSC_6434.jpg','gallery',NULL),(25,'DSC_6435.jpg','gallery',NULL),(26,'DSC_6436.jpg','gallery',NULL),(27,'DSC_6437.jpg','gallery',NULL),(28,'DSC_6441.jpg','gallery',NULL),(29,'DSC_6442.jpg','gallery',NULL),(30,'DSC_6449.jpg','gallery',NULL),(31,'DSC_6451.jpg','gallery',NULL),(32,'hanging-wedding-decor-flowers-20.jpg','gallery',NULL),(33,'hanging-wedding-decor-flowers-31.jpg','gallery',NULL),(34,'hanging-wedding-decorations-candles--decor-15.jpg','gallery',NULL),(35,'hanging-wedding-decorations-candles--decor-9.jpg','gallery',NULL),(36,'Hot-Pink-Wedding-Decorations.jpg','gallery',NULL),(37,'IMG_6463.jpg','gallery',NULL),(38,'IMG_6465.jpg','gallery',NULL),(39,'IMG_6467.jpg','gallery',NULL),(40,'IMG_6469.jpg','gallery',NULL),(41,'IMG_6470.jpg','gallery',NULL),(42,'IMG_6471.jpg','gallery',NULL),(43,'IMG_6472.jpg','gallery',NULL),(44,'IMG_6474.jpg','gallery',NULL),(45,'IMG_6475.jpg','gallery',NULL),(46,'IMG_6476.jpg','gallery',NULL),(47,'IMG_6478.jpg','gallery',NULL),(48,'IMG_6479.jpg','gallery',NULL),(49,'IMG_6481.jpg','gallery',NULL),(50,'IMG_6483.jpg','gallery',NULL),(51,'IMG_6484.jpg','gallery',NULL),(52,'IMG_6488.jpg','gallery',NULL),(53,'IMG_6490.jpg','gallery',NULL),(54,'IMG_6491.jpg','gallery',NULL),(55,'IMG_6493.jpg','gallery',NULL),(56,'IMG_6496.jpg','gallery',NULL),(57,'IMG_6498.jpg','gallery',NULL),(58,'indian-wedding-decorations-houston-indian-wedding-decorations-houston-photos.jpg','gallery',NULL),(59,'Modern-Wedding-Decorations-starlight.jpg','gallery',NULL),(60,'Pink-Wedding-Decoration-Ideas.jpg','gallery',NULL),(61,'san antonio weddings flowers decor.jpg','gallery',NULL),(62,'Select-the-perfect-wedding-table-decorations-with-the-theme-of-your-wedding.jpg','gallery',NULL),(63,'wedding-buffet-table-decorations-hanging-love-balloons.jpg','gallery',NULL),(64,'wedding-decor-hanging-flowers-purple-6.jpg','gallery',NULL),(65,'wedding-flower-ideas-for-january-345.jpg','gallery',NULL);
+insert  into `images`(`image_id`,`image_name`,`image_type`,`image_desc`) values (1,'anasayfayazlar_45_602_bg.jpg','gallery',NULL),(2,'\r\nchurch-wedding-decorations-pfesocut.jpg','gallery',NULL),(3,'\r\nDecor.jpg','gallery',NULL),(4,'\r\nDecoraton.jpg','gallery',NULL),(5,'\r\nDSC_0008.jpg','gallery',NULL),(6,'\r\nDSC_0011.jpg','gallery',NULL),(7,'\r\nDSC_0014.jpg','gallery',NULL),(8,'\r\nDSC_0028.jpg','gallery',NULL),(9,'\r\nDSC_0032.jpg','gallery',NULL),(10,'\r\nDSC_0034.jpg','gallery',NULL),(11,'\r\nDSC_0040.jpg','gallery',NULL),(12,'\r\nDSC_0045.jpg','gallery',NULL),(13,'\r\nDSC_0058.jpg','gallery',NULL),(14,'\r\nDSC_0062.jpg','gallery',NULL),(15,'\r\nDSC_0071.jpg','gallery',NULL),(16,'\r\nDSC_0072.jpg','gallery',NULL),(17,'\r\nDSC_0074.jpg','gallery',NULL),(18,'\r\nDSC_0182.jpg','gallery',NULL),(19,'\r\nDSC_0184.jpg','gallery',NULL),(20,'\r\nDSC_0701.jpg','gallery',NULL),(21,'\r\nDSC_6428.jpg','gallery',NULL),(22,'\r\nDSC_6429.jpg','gallery',NULL),(23,'\r\nDSC_6432.jpg','gallery',NULL),(24,'\r\nDSC_6434.jpg','gallery',NULL),(25,'\r\nDSC_6435.jpg','gallery',NULL),(26,'\r\nDSC_6436.jpg','gallery',NULL),(27,'\r\nDSC_6437.jpg','gallery',NULL),(28,'\r\nDSC_6441.jpg','gallery',NULL),(29,'\r\nDSC_6442.jpg','gallery',NULL),(30,'\r\nDSC_6449.jpg','gallery',NULL),(31,'\r\nDSC_6451.jpg','gallery',NULL),(32,'\r\nhanging-wedding-decor-flowers-20.jpg','gallery',NULL),(33,'\r\nhanging-wedding-decor-flowers-31.jpg','gallery',NULL),(34,'\r\nhanging-wedding-decorations-candles--decor-15.jpg','gallery',NULL),(35,'\r\nhanging-wedding-decorations-candles--decor-9.jpg','gallery',NULL),(36,'\r\nHot-Pink-Wedding-Decorations.jpg','gallery',NULL),(37,'\r\nIMG_6463.jpg','gallery',NULL),(38,'\r\nIMG_6465.jpg','gallery',NULL),(39,'\r\nIMG_6467.jpg','gallery',NULL),(40,'\r\nIMG_6469.jpg','gallery',NULL),(41,'\r\nIMG_6470.jpg','gallery',NULL),(42,'\r\nIMG_6471.jpg','gallery',NULL),(43,'\r\nIMG_6472.jpg','gallery',NULL),(44,'\r\nIMG_6474.jpg','gallery',NULL),(45,'\r\nIMG_6475.jpg','gallery',NULL),(46,'\r\nIMG_6476.jpg','gallery',NULL),(47,'\r\nIMG_6478.jpg','gallery',NULL),(48,'\r\nIMG_6479.jpg','gallery',NULL),(49,'\r\nIMG_6481.jpg','gallery',NULL),(50,'\r\nIMG_6483.jpg','gallery',NULL),(51,'\r\nIMG_6484.jpg','gallery',NULL),(52,'\r\nIMG_6488.jpg','gallery',NULL),(53,'\r\nIMG_6490.jpg','gallery',NULL),(54,'\r\nIMG_6491.jpg','gallery',NULL),(55,'\r\nIMG_6493.jpg','gallery',NULL),(56,'\r\nIMG_6496.jpg','gallery',NULL),(57,'\r\nIMG_6498.jpg','gallery',NULL),(58,'\r\nindian-wedding-decorations-houston-indian-wedding-decorations-houston-photos.jpg','gallery',NULL),(59,'\r\nModern-Wedding-Decorations-starlight.jpg','gallery',NULL),(60,'\r\nPink-Wedding-Decoration-Ideas.jpg','gallery',NULL),(61,'\r\nsan antonio weddings flowers decor.jpg','gallery',NULL),(62,'\r\nSelect-the-perfect-wedding-table-decorations-with-the-theme-of-your-wedding.jpg','gallery',NULL),(63,'\r\nwedding-buffet-table-decorations-hanging-love-balloons.jpg','gallery',NULL),(64,'\r\nwedding-decor-hanging-flowers-purple-6.jpg','gallery',NULL),(65,'\r\nwedding-flower-ideas-for-january-345.jpg','gallery',NULL);
 
 /*Table structure for table `persons` */
 
@@ -125,7 +147,7 @@ CREATE TABLE `persons` (
   `person_id` bigint(30) NOT NULL AUTO_INCREMENT,
   `persons_amt` varchar(30) NOT NULL,
   PRIMARY KEY (`person_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 /*Data for the table `persons` */
 
@@ -141,11 +163,11 @@ CREATE TABLE `visitors` (
   `hits` int(8) DEFAULT NULL,
   `session_id` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`visitor_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 /*Data for the table `visitors` */
 
-insert  into `visitors`(`visitor_id`,`ip_address`,`hits`,`session_id`) values (7,'::1',1,'5321247d6edfb'),(8,'10.29.21.60',1,'532131e2847c4'),(9,'10.29.19.109',1,'5323f271480cf'),(10,'192.168.137.217',1,'5325efbfa1960'),(11,'192.168.137.1',1,'5326ab26016f8'),(12,'127.0.0.1',1,'5326ace6cb21a'),(13,'192.168.62.60',1,'532823095a408'),(14,'192.168.61.41',1,'532823494e8ee'),(15,'192.168.8.31',1,'53282b5356a6d');
+insert  into `visitors`(`visitor_id`,`ip_address`,`hits`,`session_id`) values (1,'::1',1,'532d005b159b0');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

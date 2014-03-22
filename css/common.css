@@ -87,6 +87,10 @@ width:25%;
 margin-bottom: 0px;
 }
 
+#wedding-planner-content .span3{
+margin-left:1%;
+}
+
 @media (min-width : 800px ){
 #home-gallery .span4{
 margin-left:35%;

@@ -33,9 +33,11 @@ if($conn){
 	<li><a href = "home.php" id="home-anchor">Home</a></li>
 	<li><a href = "about-us.php" id="aboutus-anchor">About Us</a></li>
 	<li><a href="our-services.php">Our Services</a></li>
+	<li><a href="wedding-planner.php">Wedding Planner</a></li>
 	<li><a id="gallery-anchor" href="gallery.php">Gallery</a></li>
 	<li><a href="#" title="Tab under construction.">Our Clients</a></li>
-	<li><a href="#" title="Tab under construction.">Contact</a></li>
+	<li><a href="#" title="Tab under construction.">The Team</a></li>
+	<li><a href="#" title="Tab under construction.">Contact Us</a></li>
 </ul>
 </div>
 </div>
@@ -53,7 +55,7 @@ if($conn){
 <div class="span4tagline"
 	style="margin-left: 0px; padding-top: 8px; padding-left: 5px;"><em>"We
 believe in making things happen"</em></div>
-<div id="visitor-count" style="float: right;;"><em style="color:red;">Count Website Hit- <?php print $hits?></em></div>
+<div id="visitor-count" style="float: right;;"><em style="color:red;">Visitor No :  <?php print $hits?></em></div>
 </div>
 </div>
 </div>
